@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/expertise/register.css" />
+    <title>Experties</title>
+  </head>
+  <body>
+    <div class="containers">
+      <form onsubmit="return validation()">
+        <h1><label>Expertise Registration </label></h1>
+        <div class="name">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Enter last Name"
+            required
+          />
+        </div>
+
+        <div class="contacts">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Enter Address"
+            required
+          />
+          <input
+            type="number"
+            name="pnum"
+            id="pnum"
+            placeholder="Enter Phone number"
+            required
+          />
+          <!-- <input type="password" name="password" id="password" placeholder="Enter password" required> -->
+        </div>
+
+        <div class="pass">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            maxlength="20"
+            required
+          />
+          <input
+            type="password"
+            name="confirmpassword"
+            id="confirmpassword"
+            placeholder="Confirm your password"
+            maxlength="20"
+            required
+          />
+        </div>
+
+        <!-- <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" id="male" /> Male</td>
+            <td><input type="radio" name="gender" id="female" /> Female</td>
+          </tr> -->
+        <div class="work">
+          <input
+            type="text"
+            name="profession"
+            id="profession"
+            placeholder="Enter profession"
+            required
+          />
+          <input
+            type="text"
+            name="Instution"
+            id="Instution"
+            placeholder="Enter Instution name"
+            required
+          />
+        </div>
+
+        <div class="doc_img">
+          <label>Your picture:</label>
+          <input type="file" name="image" id="pimg" accept="image/*" required />
+          <label>Document/Certificate:</label>
+          <input type="file" name="doc" id="doc" accept="image/*" required />
+        </div>
+
+        <div class="citizen">
+          <label>Citizen Front side </label>
+          <input type="file" name="image" id="cimg" accept="image/*" required />
+          <label>Citizen Back side </label>
+          <input
+            type="file"
+            name="image"
+            id="cbimg"
+            accept="image/*"
+            required
+          />
+        </div>
+
+        <div class="submit">
+          <textarea
+            type="textarea"
+            name="des"
+            id="des"
+            placeholder="Write about you"
+          ></textarea>
+          <button class="btn-primary takespace">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function validation() {
+        let fname = document.getElementById("fname");
+        let lname = document.getElementById("lname");
+        let email = document.getElementById("email");
+        let address = document.getElementById("address");
+        let Contact = document.getElementById("num");
+        let gender = document.getElementsByName("gender");
+        let Description = document.getElementById("des");
+
+        if (
+          !fname.value.trim() ||
+          lname.value.trim() == "" ||
+          email.value.trim() == "" ||
+          Contact.value.trim() == "" ||
+          address.value.trim() == "" ||
+          gender.value.trim() == "" ||
+          Description.value.trim() == ""
+        ) {
+          alert("Please fill all the given details");
+          return false;
+
+          //} else if(!fname.value){
+          //     alert("PLEASE FILL YOUR NAME");
+          //     fname.focus();
+          // }else if(!lname.value.trim()){
+          //     alert("PLEASE FILL YOUR LAST NAME");
+          //     lname.focus();
+        } else if (
+          !email.value.trim().match(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{3,4}$/)
+        ) {
+          alert("PROVIDE ALL TAGE FOR E-MAIL");
+          email.focus();
+
+          // }else if(!email.value.trim().includes(".com")){
+          //     alert("missed .com");
+        } else if (!num.value.trim().match(/^\d{10}$/)) {
+          alert("number should be atlest 10");
+        } else if (!gender[0].checked && !gender[1].checked) {
+          alert("choose gender");
+        } else {
+          alert("shubam gay");
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -127,14 +127,12 @@ body {
 .container {
   width: 100%;
   display: flex;
-
   flex-wrap: wrap-reverse;
 }
 .container_left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   flex: 1;
 }
