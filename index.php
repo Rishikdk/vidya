@@ -3,7 +3,7 @@
 
 $routes = [
   "/" => "php/index.php",
-  "/edit" => "views/edit.php",
+  "/home" => "php/home.php",
   "/blog" => "views/blog.php",
   "/add" => "views/add.php",
   "/delete" => "views/delete.php",
