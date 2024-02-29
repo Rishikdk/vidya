@@ -20,7 +20,7 @@ body {
   height: 700px;
   border-radius: 15%;
   gap: 15px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .containers form {
@@ -56,13 +56,13 @@ body {
 }
 .citizen {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .doc_img {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 17px;
 }
 
 .submit {
@@ -72,7 +72,38 @@ body {
 }
 
 .containers input {
-  width: 100%;
+  width: 200px;
   height: 30px;
-  border-radius: 15%;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.doc_img img {
+  width: 50px;
+  height: auto;
+}
+
+.citizen img {
+  width: 50px;
+  height: auto;
+}
+
+.continer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: solid;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.container_img {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  border: solid;
+  border-radius: 10px;
+  gap: 15px;
 }
