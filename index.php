@@ -7,6 +7,7 @@ $routes = [
   "/blog" => "views/blog.php",
   "/add" => "views/add.php",
   "/delete" => "views/delete.php",
+  "/admin_header" => "admin/admin_header.php",
 ];
 
 $uri = parse_url($_SERVER["REQUEST_URI"])["path"];

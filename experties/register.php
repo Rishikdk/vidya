@@ -8,13 +8,13 @@
   </head>
   <body>
     <div class="containers">
+      <h1>Expertise Registration</h1>
       <form
         enctype="multipart/form-data"
         method=""
         action=""
         onsubmit="return validateForm()"
       >
-        <h1><label>Expertise Registration </label></h1>
         <div class="continer_info">
           <div class="name">
             <input
