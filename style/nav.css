@@ -260,7 +260,9 @@ body.active {
 .header .sec {
   padding: 0.5rem 1rem;
   position: relative;
+
   display: flex;
+  z-index: 100;
   align-items: center;
   justify-content: space-between;
 }
@@ -318,11 +320,11 @@ body.active {
   flex-direction: column;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: auto;
   width: 30%;
   background-color: var(--white);
   border-right: var(--border);
-  z-index: 1200;
+  z-index: 90;
 }
 
 .side-bar .close-side-bar {
