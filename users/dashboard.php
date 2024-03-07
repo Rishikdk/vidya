@@ -26,7 +26,13 @@
             <div class="icons">
                 <div id="menu_btn" class="fas fa-bars"></div>
                 <div id="search_btn" class="fas fa-search"></div>
-                <div id="user_btn" class="fas fa-user"></div>
+                <!-- <div class="popup" onclick="togglePopUp()">
+
+                    <i id="user_btn" class="fas fa-user">
+                        <span class="popuptext" id="myPopup">Rishi</span>
+                        <span class="popuptext" id="myPopup">pramod</span>
+                </div> -->
+
             </div>
         </section>
     </header>

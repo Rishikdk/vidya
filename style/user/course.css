@@ -1,0 +1,68 @@
+.containers_main {
+  display: flex;
+  flex-direction: row;
+}
+.container_cointent {
+  display: flex;
+  flex-direction: column;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+    width: 50%;
+    height: 70vh;
+  } */
+
+.container_display form {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  margin-top: 15px;
+  gap: 20px;
+  border: solid;
+}
+
+.containers_cmt form {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  margin-top: 15px;
+  gap: 20px;
+  border: solid;
+}
+
+.container_learner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.comment_profile {
+  display: flex;
+  width: 50px;
+  justify-content: start;
+  flex-direction: row;
+  height: auto;
+}
+
+.comment_profile img {
+  width: 50px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.comment_details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.comment_details button {
+  display: solid;
+  background-color: blueviolet;
+  border-radius: 50px;
+  width: 70px;
+}
