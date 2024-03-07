@@ -20,11 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 function uploadProfile()
 {
+
     $target_dir = "../upload/";
-    $target_file = $target_dir . uniqid();
+    $target_dir1 = "upload/";
+    $unique = uniqid();
+    $target_file = $target_dir . $unique;
+    $target_file1 = $target_dir1 . $unique;
     // $imageFileType = strtolower(pathinfo($_FILES["profilePic"]["name"], PATHINFO_EXTENSION));
     if (move_uploaded_file($_FILES["pimg"]["tmp_name"], $target_file)) {
-        return $target_file;
+        return $target_file1;
     } else {
         return 0;
     }

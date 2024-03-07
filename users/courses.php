@@ -6,7 +6,7 @@ if (isset($_SESSION['email'])) {
     // echo $user_email;
     // extract($_POST);
 
-    $sql = "SELECT first_name,last_name,email,uid  FROM users WHERE email = '$user_email' ";
+    $sql = "SELECT first_name,last_name,email,uid,image  FROM users WHERE email = '$user_email' ";
 
     $result = $conn->query($sql);
 
@@ -72,10 +72,10 @@ if (isset($_SESSION['email'])) {
                 <i class="fas fa-times"></i>
             </div>
             <div class="profile">
-                <img src="" alt="">
+                <img src=" http://localhost:3000/<?php echo $get_users['image'] ?>">
                 <h3>User</h3>
                 <span>student</span>
-                <a href="profile.php" class="btn">view profile</a>
+                <a href=" profile.php" class="btn">view profile</a>
             </div>
             <nav class="navbar">
                 <a href="home.php"><i class="fas fa-home"></i><span>home</span></a>
