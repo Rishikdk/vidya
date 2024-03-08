@@ -46,9 +46,9 @@
 
         <div id="student-form" style="display: none;">
             <div class="containers">
-                <h1>learner Registration</h1>
                 <form enctype="multipart/form-data" method="post" action="#" onsubmit="return validateForm()">
                     <div class="continer_info">
+                        <label>Learner Information</label>
                         <div class="row">
                             <div class="name">
                                 <label>First Name</label>
@@ -112,7 +112,7 @@
 
         <div id="expertise-form" style="display: none;">
             <div class="containers">
-                <h3>Expertise Form</h3>
+
 
                 <form enctype="multipart/form-data" action="process.php?type=expertise" method="POST"
                     onsubmit="return validateForm()">
