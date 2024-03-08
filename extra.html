@@ -2,16 +2,22 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/8eab227f7f.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       /* Popup container - can be anything you want */
       .popup {
-        position: relative;
+        position: absolute;
         display: inline-block;
         cursor: pointer;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        right: 0px;
+        top: 0px;
       }
 
       /* The actual popup */
@@ -49,6 +55,15 @@
         -webkit-animation: fadeIn 1s;
         animation: fadeIn 1s;
       }
+      .container_nav ul {
+        display: flex;
+        margin: 10px 40px;
+        width: 97%;
+        gap: 20px;
+        height: 20px;
+        flex-direction: column;
+        list-style: none;
+      }
 
       /* Add animation (fade in the popup) */
       @-webkit-keyframes fadeIn {
@@ -71,11 +86,26 @@
     </style>
   </head>
   <body style="text-align: center">
-    <h2>Popup</h2>
-
     <div class="popup" onclick="myFunction()">
-      Click me to toggle the popup!
-      <span class="popuptext" id="myPopup">A Simple Popup!</span>
+      <i class="fa-solid fa-user"></i>
+      <span class="popuptext" id="myPopup">
+        <div class="container_nav">
+          <ul>
+            <li></li>
+            <li>
+              <a href="contact.php"><i class="fas fa-book"></i> about me</a>
+            </li>
+            <li>
+              <a href="contact.php"
+                ><i class="fas fa-graduation-cap"></i> courses</a
+              >
+            </li>
+            <li>
+              <a href="dashboard.php"><i class="fas fa-home"></i>home</a>
+            </li>
+          </ul>
+        </div>
+      </span>
     </div>
 
     <script>

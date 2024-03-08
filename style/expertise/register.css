@@ -8,7 +8,8 @@ body {
 .containers {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  align-items: center;
+  width: 100%;
   height: auto;
   border-radius: 15%;
   gap: 15px;

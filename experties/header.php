@@ -127,7 +127,7 @@
       <img src="../img/head.jpg" alt="" />
       <h3>Expertise 1</h3>
       <span>Teacher</span>
-      <a href="profile.php" class="btn">view profile</a>
+      <a href="ex_profile.php" class="btn">view profile</a>
     </div>
     <nav class="navbar">
       <a href="ex_home.php"> <i class="fas fa-home"></i><span>home</span></a>
